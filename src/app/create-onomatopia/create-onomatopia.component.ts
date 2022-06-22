@@ -10,7 +10,7 @@ export class CreateOnomatopiaComponent implements OnInit {
   @Output()
   sendOnotopiaToParent: EventEmitter<string> = new EventEmitter();
   
-  testInput: string = "";
+  newOnomatopia: string = "";
 
   constructor() { };
 
@@ -18,6 +18,6 @@ export class CreateOnomatopiaComponent implements OnInit {
   }
   
   createOnomatopia(): void {
-    this.sendOnotopiaToParent.emit(this.testInput);
+    this.sendOnotopiaToParent.emit(this.newOnomatopia);
   }
 }

@@ -11,6 +11,5 @@ export class AppComponent {
 
   onReceiveNewOnomatopia(event: string){
     this.onomatopia.push(event);
-    console.log(this.onomatopia);
   }
 }
