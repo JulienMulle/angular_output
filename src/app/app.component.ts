@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular_output';
+
+  onomatopia: string[] = [];
+
+  onReceiveNewOnomatopia(event: string){
+    this.onomatopia.push(event);
+    console.log(this.onomatopia);
+  }
 }
